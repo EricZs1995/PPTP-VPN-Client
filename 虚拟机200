@@ -1,0 +1,1004 @@
+Connecting to 192.168.10.200:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
+
+Last login: Tue Aug 21 20:48:34 2018
+[root@localhost ~]# yum grade
+Loaded plugins: fastestmirror
+No such command: grade. Please use /usr/bin/yum --help
+[root@localhost ~]# yum upgrade
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.huaweicloud.com
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: ftp.sjtu.edu.cn
+base                                                              | 3.6 kB  00:00:00     
+extras                                                            | 3.4 kB  00:00:00     
+updates                                                           | 3.4 kB  00:00:00     
+(1/2): extras/7/x86_64/primary_db                                 | 174 kB  00:00:01     
+(2/2): updates/7/x86_64/primary_db                                | 5.2 MB  00:00:07     
+Resolving Dependencies
+--> Running transaction check
+---> Package audit.x86_64 0:2.8.1-3.el7 will be updated
+---> Package audit.x86_64 0:2.8.1-3.el7_5.1 will be an update
+---> Package audit-libs.x86_64 0:2.8.1-3.el7 will be updated
+---> Package audit-libs.x86_64 0:2.8.1-3.el7_5.1 will be an update
+---> Package audit-libs-python.x86_64 0:2.8.1-3.el7 will be updated
+---> Package audit-libs-python.x86_64 0:2.8.1-3.el7_5.1 will be an update
+---> Package centos-release.x86_64 0:7-5.1804.1.el7.centos will be updated
+---> Package centos-release.x86_64 0:7-5.1804.4.el7.centos will be an update
+---> Package dracut.x86_64 0:033-535.el7 will be updated
+---> Package dracut.x86_64 0:033-535.el7_5.1 will be an update
+---> Package dracut-config-rescue.x86_64 0:033-535.el7 will be updated
+---> Package dracut-config-rescue.x86_64 0:033-535.el7_5.1 will be an update
+---> Package dracut-network.x86_64 0:033-535.el7 will be updated
+---> Package dracut-network.x86_64 0:033-535.el7_5.1 will be an update
+---> Package initscripts.x86_64 0:9.49.41-1.el7 will be updated
+---> Package initscripts.x86_64 0:9.49.41-1.el7_5.1 will be an update
+---> Package kernel.x86_64 0:3.10.0-862.11.6.el7 will be installed
+---> Package kernel-headers.x86_64 0:3.10.0-862.9.1.el7 will be updated
+---> Package kernel-headers.x86_64 0:3.10.0-862.11.6.el7 will be an update
+---> Package kernel-tools.x86_64 0:3.10.0-862.9.1.el7 will be updated
+---> Package kernel-tools.x86_64 0:3.10.0-862.11.6.el7 will be an update
+---> Package kernel-tools-libs.x86_64 0:3.10.0-862.9.1.el7 will be updated
+---> Package kernel-tools-libs.x86_64 0:3.10.0-862.11.6.el7 will be an update
+---> Package kpartx.x86_64 0:0.4.9-119.el7 will be updated
+---> Package kpartx.x86_64 0:0.4.9-119.el7_5.1 will be an update
+---> Package libblkid.x86_64 0:2.23.2-52.el7 will be updated
+---> Package libblkid.x86_64 0:2.23.2-52.el7_5.1 will be an update
+---> Package libmount.x86_64 0:2.23.2-52.el7 will be updated
+---> Package libmount.x86_64 0:2.23.2-52.el7_5.1 will be an update
+---> Package libuuid.x86_64 0:2.23.2-52.el7 will be updated
+---> Package libuuid.x86_64 0:2.23.2-52.el7_5.1 will be an update
+---> Package mariadb-libs.x86_64 1:5.5.56-2.el7 will be updated
+---> Package mariadb-libs.x86_64 1:5.5.60-1.el7_5 will be an update
+---> Package python-perf.x86_64 0:3.10.0-862.9.1.el7 will be updated
+---> Package python-perf.x86_64 0:3.10.0-862.11.6.el7 will be an update
+---> Package selinux-policy.noarch 0:3.13.1-192.el7_5.4 will be updated
+---> Package selinux-policy.noarch 0:3.13.1-192.el7_5.6 will be an update
+---> Package selinux-policy-targeted.noarch 0:3.13.1-192.el7_5.4 will be updated
+---> Package selinux-policy-targeted.noarch 0:3.13.1-192.el7_5.6 will be an update
+---> Package systemd.x86_64 0:219-57.el7 will be updated
+---> Package systemd.x86_64 0:219-57.el7_5.1 will be an update
+---> Package systemd-libs.x86_64 0:219-57.el7 will be updated
+---> Package systemd-libs.x86_64 0:219-57.el7_5.1 will be an update
+---> Package systemd-sysv.x86_64 0:219-57.el7 will be updated
+---> Package systemd-sysv.x86_64 0:219-57.el7_5.1 will be an update
+---> Package tuned.noarch 0:2.9.0-1.el7 will be updated
+---> Package tuned.noarch 0:2.9.0-1.el7_5.2 will be an update
+---> Package util-linux.x86_64 0:2.23.2-52.el7 will be updated
+---> Package util-linux.x86_64 0:2.23.2-52.el7_5.1 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================
+ Package                      Arch        Version                     Repository    Size
+=========================================================================================
+Installing:
+ kernel                       x86_64      3.10.0-862.11.6.el7         updates       46 M
+Updating:
+ audit                        x86_64      2.8.1-3.el7_5.1             updates      247 k
+ audit-libs                   x86_64      2.8.1-3.el7_5.1             updates       99 k
+ audit-libs-python            x86_64      2.8.1-3.el7_5.1             updates       75 k
+ centos-release               x86_64      7-5.1804.4.el7.centos       updates       25 k
+ dracut                       x86_64      033-535.el7_5.1             updates      325 k
+ dracut-config-rescue         x86_64      033-535.el7_5.1             updates       58 k
+ dracut-network               x86_64      033-535.el7_5.1             updates      100 k
+ initscripts                  x86_64      9.49.41-1.el7_5.1           updates      437 k
+ kernel-headers               x86_64      3.10.0-862.11.6.el7         updates      7.1 M
+ kernel-tools                 x86_64      3.10.0-862.11.6.el7         updates      6.3 M
+ kernel-tools-libs            x86_64      3.10.0-862.11.6.el7         updates      6.2 M
+ kpartx                       x86_64      0.4.9-119.el7_5.1           updates       76 k
+ libblkid                     x86_64      2.23.2-52.el7_5.1           updates      178 k
+ libmount                     x86_64      2.23.2-52.el7_5.1           updates      180 k
+ libuuid                      x86_64      2.23.2-52.el7_5.1           updates       81 k
+ mariadb-libs                 x86_64      1:5.5.60-1.el7_5            updates      758 k
+ python-perf                  x86_64      3.10.0-862.11.6.el7         updates      6.3 M
+ selinux-policy               noarch      3.13.1-192.el7_5.6          updates      453 k
+ selinux-policy-targeted      noarch      3.13.1-192.el7_5.6          updates      6.6 M
+ systemd                      x86_64      219-57.el7_5.1              updates      5.0 M
+ systemd-libs                 x86_64      219-57.el7_5.1              updates      402 k
+ systemd-sysv                 x86_64      219-57.el7_5.1              updates       79 k
+ tuned                        noarch      2.9.0-1.el7_5.2             updates      244 k
+ util-linux                   x86_64      2.23.2-52.el7_5.1           updates      2.0 M
+
+Transaction Summary
+=========================================================================================
+Install   1 Package
+Upgrade  24 Packages
+
+Total download size: 89 M
+Is this ok [y/d/N]: y
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/25): audit-libs-python-2.8.1-3.el7_5.1.x86_64.rpm              |  75 kB  00:00:00     
+(2/25): audit-2.8.1-3.el7_5.1.x86_64.rpm                          | 247 kB  00:00:00     
+(3/25): dracut-config-rescue-033-535.el7_5.1.x86_64.rpm           |  58 kB  00:00:00     
+(4/25): centos-release-7-5.1804.4.el7.centos.x86_64.rpm           |  25 kB  00:00:00     
+(5/25): initscripts-9.49.41-1.el7_5.1.x86_64.rpm                  | 437 kB  00:00:00     
+(6/25): kernel-headers-3.10.0-862.11.6.el7.x86_64.rpm             | 7.1 MB  00:00:02     
+(7/25): dracut-033-535.el7_5.1.x86_64.rpm                         | 325 kB  00:00:03     
+(8/25): dracut-network-033-535.el7_5.1.x86_64.rpm                 | 100 kB  00:00:03     
+(9/25): kernel-tools-3.10.0-862.11.6.el7.x86_64.rpm               | 6.3 MB  00:00:02     
+(10/25): kpartx-0.4.9-119.el7_5.1.x86_64.rpm                      |  76 kB  00:00:00     
+(11/25): libblkid-2.23.2-52.el7_5.1.x86_64.rpm                    | 178 kB  00:00:00     
+(12/25): libmount-2.23.2-52.el7_5.1.x86_64.rpm                    | 180 kB  00:00:00     
+(13/25): libuuid-2.23.2-52.el7_5.1.x86_64.rpm                     |  81 kB  00:00:00     
+(14/25): mariadb-libs-5.5.60-1.el7_5.x86_64.rpm                   | 758 kB  00:00:00     
+(15/25): python-perf-3.10.0-862.11.6.el7.x86_64.rpm               | 6.3 MB  00:00:02     
+(16/25): selinux-policy-3.13.1-192.el7_5.6.noarch.rpm             | 453 kB  00:00:00     
+(17/25): selinux-policy-targeted-3.13.1-192.el7_5.6.noarch.rpm    | 6.6 MB  00:00:03     
+(18/25): kernel-tools-libs-3.10.0-862.11.6.el7.x86_64.rpm         | 6.2 MB  00:00:09     
+(19/25): systemd-219-57.el7_5.1.x86_64.rpm                        | 5.0 MB  00:00:02     
+(20/25): systemd-sysv-219-57.el7_5.1.x86_64.rpm                   |  79 kB  00:00:00     
+(21/25): tuned-2.9.0-1.el7_5.2.noarch.rpm                         | 244 kB  00:00:00     
+(22/25): systemd-libs-219-57.el7_5.1.x86_64.rpm                   | 402 kB  00:00:02     
+(23/25): util-linux-2.23.2-52.el7_5.1.x86_64.rpm                  | 2.0 MB  00:00:00     
+audit-libs-2.8.1-3.el7_5.1.x86 FAILED                                          01:05 ETA 
+http://mirrors.shu.edu.cn/centos/7.5.1804/updates/x86_64/Packages/audit-libs-2.8.1-3.el7_5.1.x86_64.rpm: [Errno 12] Timeout on http://mirrors.shu.edu.cn/centos/7.5.1804/updates/x86_64/Packages/audit-libs-2.8.1-3.el7_5.1.x86_64.rpm: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+(24/25): audit-libs-2.8.1-3.el7_5.1.x86_64.rpm                    |  99 kB  00:00:00     
+(25/25): kernel-3.10.0-862.11.6.el7.x86_64.rpm                    |  46 MB  00:02:38     
+-----------------------------------------------------------------------------------------
+Total                                                       574 kB/s |  89 MB  02:39     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : audit-libs-2.8.1-3.el7_5.1.x86_64                                    1/49 
+  Updating   : centos-release-7-5.1804.4.el7.centos.x86_64                          2/49 
+  Updating   : libuuid-2.23.2-52.el7_5.1.x86_64                                     3/49 
+  Updating   : libblkid-2.23.2-52.el7_5.1.x86_64                                    4/49 
+  Updating   : libmount-2.23.2-52.el7_5.1.x86_64                                    5/49 
+  Updating   : systemd-libs-219-57.el7_5.1.x86_64                                   6/49 
+  Updating   : systemd-219-57.el7_5.1.x86_64                                        7/49 
+  Updating   : util-linux-2.23.2-52.el7_5.1.x86_64                                  8/49 
+  Updating   : initscripts-9.49.41-1.el7_5.1.x86_64                                 9/49 
+  Updating   : systemd-sysv-219-57.el7_5.1.x86_64                                  10/49 
+  Updating   : selinux-policy-3.13.1-192.el7_5.6.noarch                            11/49 
+  Updating   : python-perf-3.10.0-862.11.6.el7.x86_64                              12/49 
+  Updating   : kernel-tools-libs-3.10.0-862.11.6.el7.x86_64                        13/49 
+  Updating   : kpartx-0.4.9-119.el7_5.1.x86_64                                     14/49 
+  Updating   : dracut-033-535.el7_5.1.x86_64                                       15/49 
+  Installing : kernel-3.10.0-862.11.6.el7.x86_64                                   16/49 
+  Updating   : dracut-config-rescue-033-535.el7_5.1.x86_64                         17/49 
+  Updating   : dracut-network-033-535.el7_5.1.x86_64                               18/49 
+  Updating   : kernel-tools-3.10.0-862.11.6.el7.x86_64                             19/49 
+  Updating   : tuned-2.9.0-1.el7_5.2.noarch                                        20/49 
+  Updating   : selinux-policy-targeted-3.13.1-192.el7_5.6.noarch                   21/49 
+  Updating   : audit-2.8.1-3.el7_5.1.x86_64                                        22/49 
+  Updating   : audit-libs-python-2.8.1-3.el7_5.1.x86_64                            23/49 
+  Updating   : kernel-headers-3.10.0-862.11.6.el7.x86_64                           24/49 
+  Updating   : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                                25/49 
+  Cleanup    : tuned-2.9.0-1.el7.noarch                                            26/49 
+  Cleanup    : audit-2.8.1-3.el7.x86_64                                            27/49 
+  Cleanup    : initscripts-9.49.41-1.el7.x86_64                                    28/49 
+  Cleanup    : systemd-sysv-219-57.el7.x86_64                                      29/49 
+  Cleanup    : dracut-network-033-535.el7.x86_64                                   30/49 
+  Cleanup    : dracut-config-rescue-033-535.el7.x86_64                             31/49 
+  Cleanup    : selinux-policy-targeted-3.13.1-192.el7_5.4.noarch                   32/49 
+  Cleanup    : dracut-033-535.el7.x86_64                                           33/49 
+  Cleanup    : systemd-219-57.el7.x86_64                                           34/49 
+  Cleanup    : util-linux-2.23.2-52.el7.x86_64                                     35/49 
+  Cleanup    : libmount-2.23.2-52.el7.x86_64                                       36/49 
+  Cleanup    : libblkid-2.23.2-52.el7.x86_64                                       37/49 
+  Cleanup    : kernel-tools-3.10.0-862.9.1.el7.x86_64                              38/49 
+  Cleanup    : audit-libs-python-2.8.1-3.el7.x86_64                                39/49 
+  Cleanup    : centos-release-7-5.1804.1.el7.centos.x86_64                         40/49 
+  Cleanup    : selinux-policy-3.13.1-192.el7_5.4.noarch                            41/49 
+  Cleanup    : kernel-headers-3.10.0-862.9.1.el7.x86_64                            42/49 
+  Cleanup    : audit-libs-2.8.1-3.el7.x86_64                                       43/49 
+  Cleanup    : kernel-tools-libs-3.10.0-862.9.1.el7.x86_64                         44/49 
+  Cleanup    : libuuid-2.23.2-52.el7.x86_64                                        45/49 
+  Cleanup    : systemd-libs-219-57.el7.x86_64                                      46/49 
+  Cleanup    : kpartx-0.4.9-119.el7.x86_64                                         47/49 
+  Cleanup    : python-perf-3.10.0-862.9.1.el7.x86_64                               48/49 
+  Cleanup    : 1:mariadb-libs-5.5.56-2.el7.x86_64                                  49/49 
+  Verifying  : audit-libs-python-2.8.1-3.el7_5.1.x86_64                             1/49 
+  Verifying  : 1:mariadb-libs-5.5.60-1.el7_5.x86_64                                 2/49 
+  Verifying  : initscripts-9.49.41-1.el7_5.1.x86_64                                 3/49 
+  Verifying  : audit-2.8.1-3.el7_5.1.x86_64                                         4/49 
+  Verifying  : libuuid-2.23.2-52.el7_5.1.x86_64                                     5/49 
+  Verifying  : kernel-tools-3.10.0-862.11.6.el7.x86_64                              6/49 
+  Verifying  : kpartx-0.4.9-119.el7_5.1.x86_64                                      7/49 
+  Verifying  : kernel-3.10.0-862.11.6.el7.x86_64                                    8/49 
+  Verifying  : systemd-sysv-219-57.el7_5.1.x86_64                                   9/49 
+  Verifying  : tuned-2.9.0-1.el7_5.2.noarch                                        10/49 
+  Verifying  : selinux-policy-targeted-3.13.1-192.el7_5.6.noarch                   11/49 
+  Verifying  : libmount-2.23.2-52.el7_5.1.x86_64                                   12/49 
+  Verifying  : centos-release-7-5.1804.4.el7.centos.x86_64                         13/49 
+  Verifying  : util-linux-2.23.2-52.el7_5.1.x86_64                                 14/49 
+  Verifying  : systemd-219-57.el7_5.1.x86_64                                       15/49 
+  Verifying  : systemd-libs-219-57.el7_5.1.x86_64                                  16/49 
+  Verifying  : kernel-tools-libs-3.10.0-862.11.6.el7.x86_64                        17/49 
+  Verifying  : dracut-config-rescue-033-535.el7_5.1.x86_64                         18/49 
+  Verifying  : kernel-headers-3.10.0-862.11.6.el7.x86_64                           19/49 
+  Verifying  : audit-libs-2.8.1-3.el7_5.1.x86_64                                   20/49 
+  Verifying  : dracut-033-535.el7_5.1.x86_64                                       21/49 
+  Verifying  : libblkid-2.23.2-52.el7_5.1.x86_64                                   22/49 
+  Verifying  : python-perf-3.10.0-862.11.6.el7.x86_64                              23/49 
+  Verifying  : selinux-policy-3.13.1-192.el7_5.6.noarch                            24/49 
+  Verifying  : dracut-network-033-535.el7_5.1.x86_64                               25/49 
+  Verifying  : python-perf-3.10.0-862.9.1.el7.x86_64                               26/49 
+  Verifying  : selinux-policy-3.13.1-192.el7_5.4.noarch                            27/49 
+  Verifying  : libmount-2.23.2-52.el7.x86_64                                       28/49 
+  Verifying  : audit-libs-2.8.1-3.el7.x86_64                                       29/49 
+  Verifying  : libblkid-2.23.2-52.el7.x86_64                                       30/49 
+  Verifying  : 1:mariadb-libs-5.5.56-2.el7.x86_64                                  31/49 
+  Verifying  : kernel-headers-3.10.0-862.9.1.el7.x86_64                            32/49 
+  Verifying  : kpartx-0.4.9-119.el7.x86_64                                         33/49 
+  Verifying  : selinux-policy-targeted-3.13.1-192.el7_5.4.noarch                   34/49 
+  Verifying  : tuned-2.9.0-1.el7.noarch                                            35/49 
+  Verifying  : dracut-033-535.el7.x86_64                                           36/49 
+  Verifying  : kernel-tools-libs-3.10.0-862.9.1.el7.x86_64                         37/49 
+  Verifying  : util-linux-2.23.2-52.el7.x86_64                                     38/49 
+  Verifying  : systemd-sysv-219-57.el7.x86_64                                      39/49 
+  Verifying  : audit-libs-python-2.8.1-3.el7.x86_64                                40/49 
+  Verifying  : systemd-219-57.el7.x86_64                                           41/49 
+  Verifying  : audit-2.8.1-3.el7.x86_64                                            42/49 
+  Verifying  : dracut-network-033-535.el7.x86_64                                   43/49 
+  Verifying  : initscripts-9.49.41-1.el7.x86_64                                    44/49 
+  Verifying  : dracut-config-rescue-033-535.el7.x86_64                             45/49 
+  Verifying  : systemd-libs-219-57.el7.x86_64                                      46/49 
+  Verifying  : kernel-tools-3.10.0-862.9.1.el7.x86_64                              47/49 
+  Verifying  : centos-release-7-5.1804.1.el7.centos.x86_64                         48/49 
+  Verifying  : libuuid-2.23.2-52.el7.x86_64                                        49/49 
+
+Installed:
+  kernel.x86_64 0:3.10.0-862.11.6.el7                                                    
+
+Updated:
+  audit.x86_64 0:2.8.1-3.el7_5.1                                                         
+  audit-libs.x86_64 0:2.8.1-3.el7_5.1                                                    
+  audit-libs-python.x86_64 0:2.8.1-3.el7_5.1                                             
+  centos-release.x86_64 0:7-5.1804.4.el7.centos                                          
+  dracut.x86_64 0:033-535.el7_5.1                                                        
+  dracut-config-rescue.x86_64 0:033-535.el7_5.1                                          
+  dracut-network.x86_64 0:033-535.el7_5.1                                                
+  initscripts.x86_64 0:9.49.41-1.el7_5.1                                                 
+  kernel-headers.x86_64 0:3.10.0-862.11.6.el7                                            
+  kernel-tools.x86_64 0:3.10.0-862.11.6.el7                                              
+  kernel-tools-libs.x86_64 0:3.10.0-862.11.6.el7                                         
+  kpartx.x86_64 0:0.4.9-119.el7_5.1                                                      
+  libblkid.x86_64 0:2.23.2-52.el7_5.1                                                    
+  libmount.x86_64 0:2.23.2-52.el7_5.1                                                    
+  libuuid.x86_64 0:2.23.2-52.el7_5.1                                                     
+  mariadb-libs.x86_64 1:5.5.60-1.el7_5                                                   
+  python-perf.x86_64 0:3.10.0-862.11.6.el7                                               
+  selinux-policy.noarch 0:3.13.1-192.el7_5.6                                             
+  selinux-policy-targeted.noarch 0:3.13.1-192.el7_5.6                                    
+  systemd.x86_64 0:219-57.el7_5.1                                                        
+  systemd-libs.x86_64 0:219-57.el7_5.1                                                   
+  systemd-sysv.x86_64 0:219-57.el7_5.1                                                   
+  tuned.noarch 0:2.9.0-1.el7_5.2                                                         
+  util-linux.x86_64 0:2.23.2-52.el7_5.1                                                  
+
+Complete!
+[root@localhost ~]# yum install vim
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.huaweicloud.com
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: ftp.sjtu.edu.cn
+Package 2:vim-enhanced-7.4.160-4.el7.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.10.200  netmask 255.255.254.0  broadcast 192.168.11.255
+        inet6 fe80::10db:4f29:d282:f8fa  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::c1d6:84bf:6421:a7b  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::6b68:20e3:27e3:7681  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:32:58:96  txqueuelen 1000  (Ethernet)
+        RX packets 79612  bytes 105513119 (100.6 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 50427  bytes 4098715 (3.9 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 24  bytes 2088 (2.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 24  bytes 2088 (2.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@localhost ~]# ping baidu.com
+PING baidu.com (123.125.115.110) 56(84) bytes of data.
+64 bytes from 123.125.115.110 (123.125.115.110): icmp_seq=1 ttl=52 time=2.99 ms
+64 bytes from 123.125.115.110 (123.125.115.110): icmp_seq=2 ttl=52 time=2.62 ms
+^Z
+[1]+  Stopped                 ping baidu.com
+[root@localhost ~]# yum install net-tools
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.huaweicloud.com
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: ftp.sjtu.edu.cn
+Package net-tools-2.0-0.22.20131004git.el7.x86_64 already installed and latest version
+Nothing to do
+[root@localhost ~]# yum -y install epel-release
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.huaweicloud.com
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: ftp.sjtu.edu.cn
+Resolving Dependencies
+--> Running transaction check
+---> Package epel-release.noarch 0:7-11 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================
+ Package                  Arch               Version            Repository          Size
+=========================================================================================
+Installing:
+ epel-release             noarch             7-11               extras              15 k
+
+Transaction Summary
+=========================================================================================
+Install  1 Package
+
+Total download size: 15 k
+Installed size: 24 k
+Downloading packages:
+epel-release-7-11.noarch.rpm                                      |  15 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : epel-release-7-11.noarch                                              1/1 
+  Verifying  : epel-release-7-11.noarch                                              1/1 
+
+Installed:
+  epel-release.noarch 0:7-11                                                             
+
+Complete!
+[root@localhost ~]# cd /etc/
+[root@localhost etc]# ls
+adjtime                  hosts.deny                 rc0.d
+aliases                  init.d                     rc1.d
+aliases.db               inittab                    rc2.d
+alternatives             inputrc                    rc3.d
+anacrontab               iproute2                   rc4.d
+asound.conf              issue                      rc5.d
+audisp                   issue.net                  rc6.d
+audit                    kdump.conf                 rc.d
+bash_completion.d        kernel                     rc.local
+bashrc                   krb5.conf                  redhat-release
+binfmt.d                 krb5.conf.d                resolv.conf
+centos-release           ld.so.cache                resolv.conf.save
+centos-release-upstream  ld.so.conf                 rpc
+chkconfig.d              ld.so.conf.d               rpm
+containers               libaudit.conf              rsyslog.conf
+cron.d                   libnl                      rsyslog.d
+cron.daily               libuser.conf               rwtab
+cron.deny                locale.conf                rwtab.d
+cron.hourly              localtime                  sasl2
+cron.monthly             login.defs                 securetty
+crontab                  logrotate.conf             security
+cron.weekly              logrotate.d                selinux
+crypttab                 lvm                        services
+csh.cshrc                machine-id                 sestatus.conf
+csh.login                magic                      shadow
+dbus-1                   makedumpfile.conf.sample   shadow-
+default                  man_db.conf                shells
+depmod.d                 mke2fs.conf                skel
+dhcp                     modprobe.d                 ssh
+DIR_COLORS               modules-load.d             ssl
+DIR_COLORS.256color      motd                       statetab
+DIR_COLORS.lightbgcolor  mtab                       statetab.d
+docker                   my.cnf                     subgid
+dracut.conf              my.cnf.d                   subuid
+dracut.conf.d            NetworkManager             sudo.conf
+e2fsck.conf              networks                   sudoers
+environment              nsswitch.conf              sudoers.d
+ethertypes               nsswitch.conf.bak          sudo-ldap.conf
+exports                  oci-register-machine.conf  sysconfig
+favicon.png              oci-umount                 sysctl.conf
+filesystems              oci-umount.conf            sysctl.d
+firewalld                openldap                   systemd
+fstab                    opt                        system-release
+fuse.conf                os-release                 system-release-cpe
+gcrypt                   pam.d                      terminfo
+GeoIP.conf               passwd                     tmpfiles.d
+GeoIP.conf.default       passwd-                    tuned
+gnupg                    pkcs11                     udev
+GREP_COLORS              pki                        vconsole.conf
+groff                    plymouth                   vimrc
+group                    pm                         virc
+group-                   polkit-1                   vmware-tools
+grub2.cfg                popt.d                     wgetrc
+grub.d                   postfix                    wpa_supplicant
+gshadow                  ppp                        X11
+gshadow-                 prelink.conf.d             xdg
+gss                      printcap                   xinetd.d
+host.conf                profile                    yum
+hostname                 profile.d                  yum.conf
+hosts                    protocols                  yum.repos.d
+hosts.allow              python
+[root@localhost etc]# cd ppp
+[root@localhost ppp]# ls
+ip-down  ip-down.ipv6to4  ip-up  ip-up.ipv6to4  ipv6-down  ipv6-up  peers
+[root@localhost ppp]# yum install ppp pptp pptp-setup
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+epel/x86_64/metalink                                              | 5.2 kB  00:00:00     
+ * base: mirrors.huaweicloud.com
+ * epel: mirrors.tuna.tsinghua.edu.cn
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: ftp.sjtu.edu.cn
+epel                                                              | 3.2 kB  00:00:00     
+(1/3): epel/x86_64/group_gz                                       |  88 kB  00:00:00     
+(2/3): epel/x86_64/updateinfo                                     | 935 kB  00:00:00     
+(3/3): epel/x86_64/primary                                        | 3.6 MB  00:00:00     
+epel                                                                         12656/12656
+Resolving Dependencies
+--> Running transaction check
+---> Package ppp.x86_64 0:2.4.5-33.el7 will be installed
+--> Processing Dependency: libpcap >= 14:0.8.3-6 for package: ppp-2.4.5-33.el7.x86_64
+--> Processing Dependency: libpcap.so.1()(64bit) for package: ppp-2.4.5-33.el7.x86_64
+---> Package pptp.x86_64 0:1.7.2-22.el7 will be installed
+---> Package pptp-setup.x86_64 0:1.7.2-22.el7 will be installed
+--> Running transaction check
+---> Package libpcap.x86_64 14:1.5.3-11.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================
+ Package              Arch             Version                      Repository      Size
+=========================================================================================
+Installing:
+ ppp                  x86_64           2.4.5-33.el7                 base           357 k
+ pptp                 x86_64           1.7.2-22.el7                 base            68 k
+ pptp-setup           x86_64           1.7.2-22.el7                 base            15 k
+Installing for dependencies:
+ libpcap              x86_64           14:1.5.3-11.el7              base           138 k
+
+Transaction Summary
+=========================================================================================
+Install  3 Packages (+1 Dependent package)
+
+Total download size: 578 k
+Installed size: 1.3 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/4): libpcap-1.5.3-11.el7.x86_64.rpm                            | 138 kB  00:00:00     
+(2/4): pptp-1.7.2-22.el7.x86_64.rpm                               |  68 kB  00:00:00     
+(3/4): pptp-setup-1.7.2-22.el7.x86_64.rpm                         |  15 kB  00:00:00     
+(4/4): ppp-2.4.5-33.el7.x86_64.rpm                                | 357 kB  00:00:00     
+-----------------------------------------------------------------------------------------
+Total                                                       1.2 MB/s | 578 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 14:libpcap-1.5.3-11.el7.x86_64                                        1/4 
+  Installing : ppp-2.4.5-33.el7.x86_64                                               2/4 
+  Installing : pptp-1.7.2-22.el7.x86_64                                              3/4 
+  Installing : pptp-setup-1.7.2-22.el7.x86_64                                        4/4 
+  Verifying  : ppp-2.4.5-33.el7.x86_64                                               1/4 
+  Verifying  : 14:libpcap-1.5.3-11.el7.x86_64                                        2/4 
+  Verifying  : pptp-setup-1.7.2-22.el7.x86_64                                        3/4 
+  Verifying  : pptp-1.7.2-22.el7.x86_64                                              4/4 
+
+Installed:
+  ppp.x86_64 0:2.4.5-33.el7 pptp.x86_64 0:1.7.2-22.el7 pptp-setup.x86_64 0:1.7.2-22.el7
+
+Dependency Installed:
+  libpcap.x86_64 14:1.5.3-11.el7                                                         
+
+Complete!
+[root@localhost ppp]# ls
+chap-secrets   ip-down          ip-up.ipv6to4  options       peers
+eaptls-client  ip-down.ipv6to4  ipv6-down      options.pptp
+eaptls-server  ip-up            ipv6-up        pap-secrets
+[root@localhost ppp]#  systemctl stop firewalld.service
+[root@localhost ppp]# yum install pptpd
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.huaweicloud.com
+ * epel: mirrors.tuna.tsinghua.edu.cn
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: ftp.sjtu.edu.cn
+Resolving Dependencies
+--> Running transaction check
+---> Package pptpd.x86_64 0:1.4.0-2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================
+ Package            Arch                Version                  Repository         Size
+=========================================================================================
+Installing:
+ pptpd              x86_64              1.4.0-2.el7              epel               80 k
+
+Transaction Summary
+=========================================================================================
+Install  1 Package
+
+Total download size: 80 k
+Installed size: 182 k
+Is this ok [y/d/N]: y
+Downloading packages:
+warning: /var/cache/yum/x86_64/7/epel/packages/pptpd-1.4.0-2.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+Public key for pptpd-1.4.0-2.el7.x86_64.rpm is not installed
+pptpd-1.4.0-2.el7.x86_64.rpm                                      |  80 kB  00:00:00     
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Importing GPG key 0x352C64E5:
+ Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
+ Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
+ Package    : epel-release-7-11.noarch (@extras)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+Is this ok [y/N]: y
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : pptpd-1.4.0-2.el7.x86_64                                              1/1 
+  Verifying  : pptpd-1.4.0-2.el7.x86_64                                              1/1 
+
+Installed:
+  pptpd.x86_64 0:1.4.0-2.el7                                                             
+
+Complete!
+[root@localhost ppp]# vi options.pptpd
+[root@localhost ppp]# vi options
+[root@localhost ppp]# vi options.pptp
+[root@localhost ppp]# cd ..
+[root@localhost etc]# ls
+adjtime                  hosts.deny                 python
+aliases                  init.d                     rc0.d
+aliases.db               inittab                    rc1.d
+alternatives             inputrc                    rc2.d
+anacrontab               iproute2                   rc3.d
+asound.conf              issue                      rc4.d
+audisp                   issue.net                  rc5.d
+audit                    kdump.conf                 rc6.d
+bash_completion.d        kernel                     rc.d
+bashrc                   krb5.conf                  rc.local
+binfmt.d                 krb5.conf.d                redhat-release
+centos-release           ld.so.cache                resolv.conf
+centos-release-upstream  ld.so.conf                 resolv.conf.save
+chkconfig.d              ld.so.conf.d               rpc
+containers               libaudit.conf              rpm
+cron.d                   libnl                      rsyslog.conf
+cron.daily               libuser.conf               rsyslog.d
+cron.deny                locale.conf                rwtab
+cron.hourly              localtime                  rwtab.d
+cron.monthly             login.defs                 sasl2
+crontab                  logrotate.conf             securetty
+cron.weekly              logrotate.d                security
+crypttab                 lvm                        selinux
+csh.cshrc                machine-id                 services
+csh.login                magic                      sestatus.conf
+dbus-1                   makedumpfile.conf.sample   shadow
+default                  man_db.conf                shadow-
+depmod.d                 mke2fs.conf                shells
+dhcp                     modprobe.d                 skel
+DIR_COLORS               modules-load.d             ssh
+DIR_COLORS.256color      motd                       ssl
+DIR_COLORS.lightbgcolor  mtab                       statetab
+docker                   my.cnf                     statetab.d
+dracut.conf              my.cnf.d                   subgid
+dracut.conf.d            NetworkManager             subuid
+e2fsck.conf              networks                   sudo.conf
+environment              nsswitch.conf              sudoers
+ethertypes               nsswitch.conf.bak          sudoers.d
+exports                  oci-register-machine.conf  sudo-ldap.conf
+favicon.png              oci-umount                 sysconfig
+filesystems              oci-umount.conf            sysctl.conf
+firewalld                openldap                   sysctl.d
+fstab                    opt                        systemd
+fuse.conf                os-release                 system-release
+gcrypt                   pam.d                      system-release-cpe
+GeoIP.conf               passwd                     terminfo
+GeoIP.conf.default       passwd-                    tmpfiles.d
+gnupg                    pkcs11                     tuned
+GREP_COLORS              pki                        udev
+groff                    plymouth                   vconsole.conf
+group                    pm                         vimrc
+group-                   polkit-1                   virc
+grub2.cfg                popt.d                     vmware-tools
+grub.d                   postfix                    wgetrc
+gshadow                  ppp                        wpa_supplicant
+gshadow-                 pptpd.conf                 X11
+gss                      prelink.conf.d             xdg
+host.conf                printcap                   xinetd.d
+hostname                 profile                    yum
+hosts                    profile.d                  yum.conf
+hosts.allow              protocols                  yum.repos.d
+[root@localhost etc]# vi pptpd.conf 
+[root@localhost etc]# route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         gateway         0.0.0.0         UG    100    0        0 ens33
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+[root@localhost etc]# pptpsetup --create test_pptp --server 192.168.10.198 --username root --password root --encrypt --start
+Using interface ppp0
+Connect: ppp0 <--> /dev/pts/1
+CHAP authentication succeeded
+MPPE 128-bit stateless compression enabled
+local  IP address 10.99.99.100
+remote IP address 10.99.99.1
+[root@localhost etc]# route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         gateway         0.0.0.0         UG    100    0        0 ens33
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp0
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+192.168.10.198  0.0.0.0         255.255.255.255 UH    0      0        0 ens33
+[root@localhost etc]# ping www.baidu.com
+PING www.a.shifen.com (180.149.131.98) 56(84) bytes of data.
+64 bytes from 180.149.131.98 (180.149.131.98): icmp_seq=1 ttl=52 time=3.55 ms
+64 bytes from 180.149.131.98 (180.149.131.98): icmp_seq=2 ttl=52 time=3.63 ms
+^Z
+[2]+  Stopped                 ping www.baidu.com
+[root@localhost etc]# pppd call test_pptp
+[root@localhost etc]# route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         gateway         0.0.0.0         UG    100    0        0 ens33
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp0
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp1
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+192.168.10.198  0.0.0.0         255.255.255.255 UH    0      0        0 ens33
+[root@localhost etc]# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.10.200  netmask 255.255.254.0  broadcast 192.168.11.255
+        inet6 fe80::10db:4f29:d282:f8fa  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::c1d6:84bf:6421:a7b  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::6b68:20e3:27e3:7681  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:32:58:96  txqueuelen 1000  (Ethernet)
+        RX packets 101868  bytes 112675240 (107.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 52666  bytes 4385646 (4.1 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 24  bytes 2088 (2.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 24  bytes 2088 (2.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ppp0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1496
+        inet 10.99.99.100  netmask 255.255.255.255  destination 10.99.99.1
+        ppp  txqueuelen 3  (Point-to-Point Protocol)
+        RX packets 6  bytes 60 (60.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6  bytes 66 (66.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ppp1: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1496
+        inet 10.99.99.100  netmask 255.255.255.255  destination 10.99.99.1
+        ppp  txqueuelen 3  (Point-to-Point Protocol)
+        RX packets 6  bytes 60 (60.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6  bytes 66 (66.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@localhost etc]# vi ppp/chap-secrets 
+[root@localhost etc]# ip route
+default via 192.168.10.1 dev ens33 proto static metric 100 
+10.99.99.1 dev ppp0 proto kernel scope link src 10.99.99.100 
+10.99.99.1 dev ppp1 proto kernel scope link src 10.99.99.100 
+192.168.10.0/23 dev ens33 proto kernel scope link src 192.168.10.200 metric 100 
+192.168.10.198 dev ens33 scope link src 192.168.10.200 
+[root@localhost etc]# route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         gateway         0.0.0.0         UG    100    0        0 ens33
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp0
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp1
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+192.168.10.198  0.0.0.0         255.255.255.255 UH    0      0        0 ens33
+[root@localhost etc]# route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.10.1    0.0.0.0         UG    100    0        0 ens33
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp0
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp1
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+192.168.10.198  0.0.0.0         255.255.255.255 UH    0      0        0 ens33
+[root@localhost etc]# ping baidu.com
+PING baidu.com (123.125.115.110) 56(84) bytes of data.
+64 bytes from 123.125.115.110 (123.125.115.110): icmp_seq=1 ttl=52 time=2.47 ms
+64 bytes from 123.125.115.110 (123.125.115.110): icmp_seq=2 ttl=52 time=2.62 ms
+64 bytes from 123.125.115.110 (123.125.115.110): icmp_seq=3 ttl=52 time=2.78 ms
+64 bytes from 123.125.115.110 (123.125.115.110): icmp_seq=4 ttl=52 time=2.65 ms
+^Z
+[3]+  Stopped                 ping baidu.com
+[root@localhost etc]# ip route replace default dev ppp1
+[root@localhost etc]# route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         0.0.0.0         0.0.0.0         U     0      0        0 ppp1
+0.0.0.0         192.168.10.1    0.0.0.0         UG    100    0        0 ens33
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp0
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp1
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+192.168.10.198  0.0.0.0         255.255.255.255 UH    0      0        0 ens33
+[root@localhost etc]# ping baidu.com
+PING baidu.com (220.181.57.216) 56(84) bytes of data.
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=1 ttl=52 time=4.74 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=2 ttl=52 time=4.32 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=3 ttl=52 time=3.97 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=4 ttl=52 time=4.71 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=5 ttl=52 time=4.38 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=6 ttl=52 time=3.79 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=7 ttl=52 time=4.06 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=8 ttl=52 time=4.08 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=9 ttl=52 time=4.20 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=10 ttl=52 time=4.14 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=11 ttl=52 time=3.93 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=12 ttl=52 time=3.92 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=13 ttl=52 time=4.01 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=14 ttl=52 time=3.79 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=15 ttl=52 time=3.99 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=16 ttl=52 time=3.87 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=17 ttl=52 time=4.70 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=18 ttl=52 time=3.96 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=19 ttl=52 time=3.77 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=20 ttl=52 time=5.04 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=21 ttl=52 time=4.09 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=22 ttl=52 time=4.73 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=23 ttl=52 time=12.8 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=24 ttl=52 time=4.28 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=25 ttl=52 time=3.88 ms
+^Z
+[4]+  Stopped                 ping baidu.com
+[root@localhost etc]# yum -y remove pptpd
+Loaded plugins: fastestmirror
+Resolving Dependencies
+--> Running transaction check
+---> Package pptpd.x86_64 0:1.4.0-2.el7 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================================================
+ Package                                   Arch                                       Version                                          Repository                                 Size
+=======================================================================================================================================================================================
+Removing:
+ pptpd                                     x86_64                                     1.4.0-2.el7                                      @epel                                     182 k
+
+Transaction Summary
+=======================================================================================================================================================================================
+Remove  1 Package
+
+Installed size: 182 k
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : pptpd-1.4.0-2.el7.x86_64                                                                                                                                            1/1 
+warning: /etc/ppp/options.pptpd saved as /etc/ppp/options.pptpd.rpmsave
+  Verifying  : pptpd-1.4.0-2.el7.x86_64                                                                                                                                            1/1 
+
+Removed:
+  pptpd.x86_64 0:1.4.0-2.el7                                                                                                                                                           
+
+Complete!
+[root@localhost etc]# ls
+adjtime                  cron.weekly              fstab               inittab         machine-id                 pam.d           rc4.d             shadow-             tuned
+aliases                  crypttab                 fuse.conf           inputrc         magic                      passwd          rc5.d             shells              udev
+aliases.db               csh.cshrc                gcrypt              iproute2        makedumpfile.conf.sample   passwd-         rc6.d             skel                vconsole.conf
+alternatives             csh.login                GeoIP.conf          issue           man_db.conf                pkcs11          rc.d              ssh                 vimrc
+anacrontab               dbus-1                   GeoIP.conf.default  issue.net       mke2fs.conf                pki             rc.local          ssl                 virc
+asound.conf              default                  gnupg               kdump.conf      modprobe.d                 plymouth        redhat-release    statetab            vmware-tools
+audisp                   depmod.d                 GREP_COLORS         kernel          modules-load.d             pm              resolv.conf       statetab.d          wgetrc
+audit                    dhcp                     groff               krb5.conf       motd                       polkit-1        resolv.conf.save  subgid              wpa_supplicant
+bash_completion.d        DIR_COLORS               group               krb5.conf.d     mtab                       popt.d          rpc               subuid              X11
+bashrc                   DIR_COLORS.256color      group-              ld.so.cache     my.cnf                     postfix         rpm               sudo.conf           xdg
+binfmt.d                 DIR_COLORS.lightbgcolor  grub2.cfg           ld.so.conf      my.cnf.d                   ppp             rsyslog.conf      sudoers             xinetd.d
+centos-release           docker                   grub.d              ld.so.conf.d    NetworkManager             prelink.conf.d  rsyslog.d         sudoers.d           yum
+centos-release-upstream  dracut.conf              gshadow             libaudit.conf   networks                   printcap        rwtab             sudo-ldap.conf      yum.conf
+chkconfig.d              dracut.conf.d            gshadow-            libnl           nsswitch.conf              profile         rwtab.d           sysconfig           yum.repos.d
+containers               e2fsck.conf              gss                 libuser.conf    nsswitch.conf.bak          profile.d       sasl2             sysctl.conf
+cron.d                   environment              host.conf           locale.conf     oci-register-machine.conf  protocols       securetty         sysctl.d
+cron.daily               ethertypes               hostname            localtime       oci-umount                 python          security          systemd
+cron.deny                exports                  hosts               login.defs      oci-umount.conf            rc0.d           selinux           system-release
+cron.hourly              favicon.png              hosts.allow         logrotate.conf  openldap                   rc1.d           services          system-release-cpe
+cron.monthly             filesystems              hosts.deny          logrotate.d     opt                        rc2.d           sestatus.conf     terminfo
+crontab                  firewalld                init.d              lvm             os-release                 rc3.d           shadow            tmpfiles.d
+[root@localhost etc]# ls ppp
+chap-secrets  eaptls-client  eaptls-server  ip-down  ip-down.ipv6to4  ip-up  ip-up.ipv6to4  ipv6-down  ipv6-up  options  options.pptp  options.pptpd.rpmsave  pap-secrets  peers
+[root@localhost etc]# ping baidu.com
+PING baidu.com (123.125.115.110) 56(84) bytes of data.
+64 bytes from 123.125.115.110 (123.125.115.110): icmp_seq=1 ttl=52 time=2.61 ms
+^Z
+[5]+  Stopped                 ping baidu.com
+[root@localhost etc]# pptpsetup --create test_pptp --server 192.168.10.198 --username root1 --password root1 --encrypt --start
+Using interface ppp0
+Connect: ppp0 <--> /dev/pts/1
+CHAP authentication succeeded
+MPPE 128-bit stateless compression enabled
+local  IP address 10.99.99.101
+remote IP address 10.99.99.1
+[root@localhost etc]# ping baidu.com
+PING baidu.com (220.181.57.216) 56(84) bytes of data.
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=1 ttl=53 time=2.79 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=2 ttl=53 time=2.81 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=3 ttl=53 time=2.76 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=4 ttl=53 time=2.66 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=5 ttl=53 time=2.88 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=6 ttl=53 time=2.93 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=7 ttl=53 time=2.70 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=8 ttl=53 time=2.80 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=9 ttl=53 time=2.87 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=10 ttl=53 time=2.81 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=11 ttl=53 time=2.75 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=12 ttl=53 time=2.65 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=13 ttl=53 time=2.83 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=14 ttl=53 time=2.96 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=15 ttl=53 time=2.88 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=16 ttl=53 time=3.02 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=17 ttl=53 time=2.82 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=18 ttl=53 time=3.21 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=19 ttl=53 time=2.76 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=20 ttl=53 time=2.78 ms
+64 bytes from 220.181.57.216 (220.181.57.216): icmp_seq=21 ttl=53 time=2.84 ms
+^Z
+[6]+  Stopped                 ping baidu.com
+[root@localhost etc]# route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.10.1    0.0.0.0         UG    100    0        0 ens33
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp0
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+192.168.10.198  0.0.0.0         255.255.255.255 UH    0      0        0 ens33
+[root@localhost etc]# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.10.200  netmask 255.255.254.0  broadcast 192.168.11.255
+        inet6 fe80::10db:4f29:d282:f8fa  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::c1d6:84bf:6421:a7b  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::6b68:20e3:27e3:7681  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:32:58:96  txqueuelen 1000  (Ethernet)
+        RX packets 144556  bytes 116084613 (110.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 53778  bytes 4512478 (4.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 24  bytes 2088 (2.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 24  bytes 2088 (2.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ppp0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1496
+        inet 10.99.99.101  netmask 255.255.255.255  destination 10.99.99.1
+        ppp  txqueuelen 3  (Point-to-Point Protocol)
+        RX packets 6  bytes 60 (60.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6  bytes 66 (66.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@localhost etc]# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.10.200  netmask 255.255.254.0  broadcast 192.168.11.255
+        inet6 fe80::10db:4f29:d282:f8fa  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::c1d6:84bf:6421:a7b  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::6b68:20e3:27e3:7681  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:32:58:96  txqueuelen 1000  (Ethernet)
+        RX packets 144672  bytes 116093727 (110.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 53783  bytes 4515902 (4.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 24  bytes 2088 (2.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 24  bytes 2088 (2.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ppp0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1496
+        inet 10.99.99.101  netmask 255.255.255.255  destination 10.99.99.1
+        ppp  txqueuelen 3  (Point-to-Point Protocol)
+        RX packets 6  bytes 60 (60.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6  bytes 66 (66.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@localhost etc]# ip route replace default dev ppp0
+[root@localhost etc]# route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         0.0.0.0         0.0.0.0         U     0      0        0 ppp0
+0.0.0.0         192.168.10.1    0.0.0.0         UG    100    0        0 ens33
+10.99.99.1      0.0.0.0         255.255.255.255 UH    0      0        0 ppp0
+192.168.10.0    0.0.0.0         255.255.254.0   U     100    0        0 ens33
+192.168.10.198  0.0.0.0         255.255.255.255 UH    0      0        0 ens33
+[root@localhost etc]# traceroute www.baidu.com
+-bash: traceroute: command not found
+[root@localhost etc]# yum install -y traceroute
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirrors.huaweicloud.com
+ * epel: mirrors.tuna.tsinghua.edu.cn
+ * extras: mirrors.tuna.tsinghua.edu.cn
+ * updates: ftp.sjtu.edu.cn
+Resolving Dependencies
+--> Running transaction check
+---> Package traceroute.x86_64 3:2.0.22-2.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=======================================================================================================================================================================================
+ Package                                      Arch                                     Version                                            Repository                              Size
+=======================================================================================================================================================================================
+Installing:
+ traceroute                                   x86_64                                   3:2.0.22-2.el7                                     base                                    59 k
+
+Transaction Summary
+=======================================================================================================================================================================================
+Install  1 Package
+
+Total download size: 59 k
+Installed size: 92 k
+Downloading packages:
+traceroute-2.0.22-2.el7.x86_64.rpm                                                                                                                              |  59 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : 3:traceroute-2.0.22-2.el7.x86_64                                                                                                                                    1/1 
+  Verifying  : 3:traceroute-2.0.22-2.el7.x86_64                                                                                                                                    1/1 
+
+Installed:
+  traceroute.x86_64 3:2.0.22-2.el7                                                                                                                                                     
+
+Complete!
+[root@localhost etc]# ifconfig
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.10.200  netmask 255.255.254.0  broadcast 192.168.11.255
+        inet6 fe80::10db:4f29:d282:f8fa  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::c1d6:84bf:6421:a7b  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::6b68:20e3:27e3:7681  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:32:58:96  txqueuelen 1000  (Ethernet)
+        RX packets 146102  bytes 116268280 (110.8 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 54073  bytes 4555220 (4.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 24  bytes 2088 (2.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 24  bytes 2088 (2.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ppp0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1496
+        inet 10.99.99.101  netmask 255.255.255.255  destination 10.99.99.1
+        ppp  txqueuelen 3  (Point-to-Point Protocol)
+        RX packets 115  bytes 66960 (65.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 155  bytes 8513 (8.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@localhost etc]# traceroute www.baidu.com
+traceroute to www.baidu.com (180.149.131.98), 30 hops max, 60 byte packets
+ 1  10.99.99.1 (10.99.99.1)  2.918 ms  2.834 ms  2.815 ms^Z
+[7]+  Stopped                 traceroute www.baidu.com
+[root@localhost etc]# cd ~
+[root@localhost ~]# histoty 200 >> history
+-bash: histoty: command not found
+[root@localhost ~]# history 200 >> history
+[root@localhost ~]# vi history 
+[root@localhost ~]# 
