@@ -2,11 +2,11 @@ FROM centos:7
 MAINTAINER eric <ericzs1208@gmail.com>
 
 RUN yum upgrade
-	&& yum -y install vim
-	&& yum -y install net-tools
-	&& yum -y install epel-release
-	&& yum -y install ppp pptp pptp-setup
-	&& systemctl stop firewalld.service
+RUN yum -y install vim
+RUN yum -y install net-tools
+RUN yum -y install epel-release
+RUN yum -y install ppp pptp pptp-setup
+RUN systemctl stop firewalld.service
 
 #vi options.pptp         ????
 #three value server_ip username password
